@@ -144,26 +144,34 @@ public class MainActivity extends AppCompatActivity {
                     condition.setText(conditions);
 
 
-                 if(isDay==1)
-                    {
-                        Glide.with(MainActivity.this).load("https://media.istockphoto.com/id/1192679095/id/foto/latar-belakang-langit-biru-jernih-awan-dengan-latar-belakang.jpg?s=170667a&w=0&k=20&c=HM0OO9ukYA2Hq7jVWHbRF2eq96OSFwQnUZbSq1Pw9Dk=").into(backIV);
+//                 if(isDay==1)
+//                    {
+//                        Glide.with(MainActivity.this).load("https://media.istockphoto.com/id/1192679095/id/foto/latar-belakang-langit-biru-jernih-awan-dengan-latar-belakang.jpg?s=170667a&w=0&k=20&c=HM0OO9ukYA2Hq7jVWHbRF2eq96OSFwQnUZbSq1Pw9Dk=").into(backIV);
+//
+//                        citynametv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//                        cityedt.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//
+//                        temperature .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//                        condition .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//                        date.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//                        tv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+//                        searchh.setBackgroundColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black_shade))));
+//
+//                    }else
+//                    {
+                       // Glide.with(MainActivity.this).load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQ86GxPvZLoPKz0CmjqtQ0Ar12mEOm6KWcXnwTHciNuWx8yhjbNeqXRfucSP-xGh3v5o&usqp=CAU").into(backIV);
+                        citynametv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
+                        cityedt.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
 
-                        citynametv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
-                        cityedt.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
+                        temperature .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
 
-                        temperature .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
-                        condition .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
-                        date.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
-                        tv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black))));
-                        searchh.setBackgroundColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black_shade))));
-
-                    }else
-                    {
-                        Glide.with(MainActivity.this).load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQ86GxPvZLoPKz0CmjqtQ0Ar12mEOm6KWcXnwTHciNuWx8yhjbNeqXRfucSP-xGh3v5o&usqp=CAU").into(backIV);
+                        condition .setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
+                        date.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
+                        tv.setTextColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.white))));
+                       // searchh.setBackgroundColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(MainActivity.this, R.color.black_shade))));
 
 
-
-                    }
+             //       }
                     JSONObject forecastObj=response.getJSONObject("forecast");
                     JSONObject forecastO=forecastObj.getJSONArray("forecastday").getJSONObject(0);
                     JSONArray hourArray=forecastO.getJSONArray("hour");
