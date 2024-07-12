@@ -1,12 +1,12 @@
-package com.pratham.wheatherapp;
+package com.pratham.wheatherapp.Data_model;
 
-public class model {
+public class today_forecast_data_model {
     private String time;
     private String temperature;
     private String icon;
     private String windSpeed;
 
-    public model(String time, String temperature, String icon, String windSpeed) {
+    public today_forecast_data_model(String time, String temperature, String icon, String windSpeed) {
         this.time = time;
         this.temperature = temperature;
         this.icon = icon;
